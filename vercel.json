@@ -9,10 +9,6 @@
   ],
   "rewrites": [
     {
-      "source": "/listen/test/mpzd122i-3b7600d04e97378c",
-      "destination": "https://borio.pages.dev/listen/test/mpzd122i-3b7600d04e97378c"
-    },
-    {
       "source": "/listen/:path*",
       "destination": "https://bramlove1234-public.hf.space/listen/:path*"
     },
