@@ -5,11 +5,12 @@
       "source": "/",
       "destination": "https://borio.pages.dev",
       "permanent": false
-    },
+    }
+  ],
+  "rewrites": [
     {
       "source": "/:path*",
-      "destination": "https://borio.pages.dev",
-      "permanent": false
+      "destination": "https://bramlove1234-public.hf.space/:path*"
     }
   ]
 }
