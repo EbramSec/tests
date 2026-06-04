@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/listen/:path*",
-      "destination": "https://bramlove1234-public.hf.space/listen/:path*"
+      "destination": "https://bramlove1234-public.hf.space/"
     }
   ]
 }
