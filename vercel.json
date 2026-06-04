@@ -2,6 +2,11 @@
   "version": 2,
   "redirects": [
     {
+      "source": "/",
+      "destination": "https://borio.pages.dev",
+      "permanent": false
+    },
+    {
       "source": "/:path*",
       "destination": "https://borio.pages.dev",
       "permanent": false
