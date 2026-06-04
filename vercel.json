@@ -2,9 +2,19 @@
   "version": 2,
   "redirects": [
     {
-      "source": "/:path*",
-      "destination": "https://borio.pages.dev/:path*",
+      "source": "/",
+      "destination": "https://borio.pages.dev",
       "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/listen/:path*",
+      "destination": "https://bramlove1234-public.hf.space/listen/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://borio.pages.dev/:path*"
     }
   ]
 }
