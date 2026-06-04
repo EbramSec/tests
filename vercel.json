@@ -2,12 +2,8 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/listen/:path*",
-      "destination": "https://bramlove1234-public.hf.space/listen/:path*"
-    },
-    {
-      "source": "/:path*",
-      "destination": "https://bramlove1234-public.hf.space/:path*"
+      "source": "/(.*)",
+      "destination": "https://bramlove1234-public.hf.space/$1"
     }
   ]
 }
