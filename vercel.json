@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/listen/:path*",
-      "destination": "https://borio.vercel.app/"
+      "destination": "https://bramlove1234-public.hf.space/listen/:path*"
     }
   ]
 }
