@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Borio Radio - New Link</title>
+
+  <script>
+    const NEW_LINK = "https://borio.edgeone.dev";
+
+    setTimeout(() => {
+      window.location.href = NEW_LINK;
+    }, 5000);
+
+    function copyLink() {
+      navigator.clipboard.writeText(NEW_LINK).then(() => {
+        const text = document.getElementById("copiedText");
+        text.style.display = "block";
+        setTimeout(() => {
+          text.style.display = "none";
+        }, 2500);
+      });
+    }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background:
+        radial-gradient(circle at top left, rgba(168, 85, 247, 0.35), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.28), transparent 35%),
+        linear-gradient(135deg, #07030d, #13081f 55%, #05020a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      overflow: hidden;
+    }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(#ffffff55 1px, transparent 1px),
+        radial-gradient(#ffffff33 1px, transparent 1px);
+      background-size: 60px 60px, 100px 100px;
+      background-position: 0 0, 30px 40px;
+      animation: moveStars 18s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes moveStars {
+      from { transform: translateY(0); }
+      to { transform: translateY(-80px); }
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 620px;
+      padding: 38px 30px;
+      border-radius: 28px;
+      background: rgba(18, 10, 30, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 0 45px rgba(168, 85, 247, 0.28);
+      backdrop-filter: blur(16px);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 999px;
+      background: rgba(168, 85, 247, 0.18);
+      color: #d8b4fe;
+      font-size: 14px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(216, 180, 254, 0.25);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #c084fc, #f472b6, #7dd3fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+
+    .message {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #e9d5ff;
+      margin-bottom: 24px;
+    }
+
+    .warning {
+      color: #ffd36a;
+      font-weight: bold;
+    }
+
+    .link-box {
+      margin: 22px 0;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #7dd3fc;
+      font-size: 20px;
+      word-break: break-all;
+      box-shadow: inset 0 0 18px rgba(125, 211, 252, 0.08);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    button, a.button {
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #9333ea, #ec4899);
+      box-shadow: 0 10px 25px rgba(236, 72, 153, 0.28);
+      transition: 0.2s ease;
+    }
+
+    button:hover, a.button:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 14px 35px rgba(236, 72, 153, 0.42);
+    }
+
+    .open {
+      background: linear-gradient(135deg, #0ea5e9, #8b5cf6) !important;
+    }
+
+    .small {
+      margin-top: 22px;
+      font-size: 13px;
+      color: #a78bfa;
+      opacity: 0.9;
+    }
+
+    .copied {
+      margin-top: 14px;
+      color: #86efac;
+      font-size: 14px;
+      display: none;
+    }
+
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .message {
+        font-size: 16px;
+      }
+
+      .link-box {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stars"></div>
+
+  <div class="card">
+    <div class="badge">Borio Radio Update</div>
+
+    <h1>New IMVU Radio Link</h1>
+
+    <p class="message">
+      <span class="warning">Important:</span>
+      The old Vercel link will be closed soon.<br />
+      You will be redirected automatically in 5 seconds.
+    </p>
+
+    <div class="link-box">
+      https://borio.edgeone.dev
+    </div>
+
+    <div class="buttons">
+      <button onclick="copyLink()">Copy New Link</button>
+      <a class="button open" href="https://borio.edgeone.dev">
+        Open New Link
+      </a>
+    </div>
+
+    <div class="copied" id="copiedText">
+      ✅ Link copied successfully
+    </div>
+
+    <p class="small">
+      Please update your IMVU radio link to avoid interruption.
+    </p>
+  </div>
+</body>
+</html>
