@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://bramlove1234-public.hf.space/$1"
+      "destination": "https://borio.edgeone.dev/$1",
+      "permanent": false
     }
   ]
 }
