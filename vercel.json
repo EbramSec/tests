@@ -2,8 +2,8 @@
   "version": 2,
   "redirects": [
     {
-      "source": "/(.*)",
-      "destination": "https://borio.edgeone.dev/$1",
+      "source": "/listen/:path*",
+      "destination": "https://borio.edgeone.dev/listen/:path*",
       "permanent": false
     }
   ]
